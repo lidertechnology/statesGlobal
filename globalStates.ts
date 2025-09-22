@@ -1,7 +1,7 @@
 import { Injectable, signal, Signal, WritableSignal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
-export class StatesGlobal {
+export class GlobalStates {
 
   private readonly _sesionActiva: WritableSignal<boolean> = signal(false);
   private readonly _rolDeUsuario: WritableSignal<string | null> = signal(null);
